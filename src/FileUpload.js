@@ -23,7 +23,7 @@ export default class FileUpload extends React.Component {
     data.append('file', this.state.selectedFile, this.state.selectedFile.name)
 
     axios
-      .post('http://localhost:3000/patients/import.json', data, {
+      .post('https://sleepy-citadel-27911.herokuapp.com/patients/import.json', data, {
         onUploadProgress: ProgressEvent => {
           this.setState({
             loaded: (ProgressEvent.loaded / ProgressEvent.total*100),

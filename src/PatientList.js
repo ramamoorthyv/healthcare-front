@@ -38,7 +38,7 @@ export default class PatientList extends React.Component {
   
 
   componentDidMount() {
-    axios.get('http://localhost:3000/patients.json')
+    axios.get('https://sleepy-citadel-27911.herokuapp.com/patients.json')
       .then(res => {
         const patients = res.data;
         this.setState({ patients });
