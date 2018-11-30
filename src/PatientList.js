@@ -12,7 +12,7 @@ const columns = [
     sortable: true,
   },
   {
-    name: 'DOB',
+    name: 'Date',
     selector: 'dob',
 
     sortable: true,
@@ -38,7 +38,7 @@ export default class PatientList extends React.Component {
   
 
   componentDidMount() {
-    axios.get('https://sleepy-citadel-27911.herokuapp.com/patients.json')
+    axios.get('http://sleepy-citadel-27911.herokuapp.com/patients.json')
       .then(res => {
         const patients = res.data;
         this.setState({ patients });
