@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import 'FileUpload' from './FileUpload';
-import 'Patientslist' from './viewPatients';
+//import FileUpload from './Fileupload';
+//import Patientslist from './Patientslist';
+ import PatientList from './PatientList';
+import FileUpload from './FileUpload';
 
 class App extends Component {
   render() {
@@ -8,7 +10,8 @@ class App extends Component {
       <div>
         <h2> File upload </h2>
         <FileUpload />
-        <Patientslist />
+        <PatientList />
+        
       </div>
     );
   }
